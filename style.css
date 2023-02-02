@@ -1,0 +1,121 @@
+* {box-sizing: border-box;}
+
+/* body {
+  margin: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}  */
+/* Header/Blog Title */
+header {
+    padding: 30px;
+    text-align: center;
+    background-image: url('./surgery.png');
+    /* opacity: 0.6; */
+  }
+  .headerContainer {
+    opacity: 0.7;
+    height: 250px;
+    margin: auto;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #086754;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    text-shadow: -2px 3px 8px rgba(20, 23, 20, 0.886);
+    color: rgb(240, 247, 239);
+  }
+  header a {
+    font-size: 25px;
+    text-shadow: -2px 3px 8px rgba(0,0,0,0.45);
+    text-decoration: none !important;
+    color: rgb(240, 247, 239);
+  }
+
+ul.navList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+    background: #0d7963;
+    /* you can change the backgorund color here. */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+ul.navList li {
+    border-right: 1px solid #189b80;
+    /* you can change the border color matching to your background color */
+    float: left;
+}
+
+ul.navList a {
+    display: block;
+    padding: 0 28px;
+    color: #ccece6;
+    text-decoration: none;
+}
+
+ul.navList a:hover,
+ul.navList li.current a {
+    background: #086754;
+}
+
+.topNav .search-container {
+    float: right;
+}
+
+.picHeader {
+    align-content: center;
+}
+
+main {
+    height: 50vh;
+}
+/* Create three equal columns that float next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  /* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #0d7963;
+    margin-top: 20px;
+    color: #ccece6;
+  }
+

@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
 	<link rel="stylesheet" href="./style.css">
 	<title>Tech Returners Surgery: Home</title>
 </head>
@@ -39,13 +40,10 @@
 			</ul>
 		</nav>
 
-
-
 		<main class="row">
-			<div class="column">
+			<section class="column">
 				<div class="card">
-					<!-- <section> -->
-					<h3>COVID Restriction Update</h3>
+					<h2>COVID Restriction Update</h2>
 					<p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our
 						patients and
 						staff, we will continue to do so.</p>
@@ -58,88 +56,121 @@
 					</p>
 
 					<p>If you arrive without a mask and are not exempt, you will be asked to leave.</p>
-					<!-- </section> -->
 				</div>
-			</div>
-			<div class="column">
-				<section>
-					<h2>How to use Ask My Doc?</h2>
+			</section>
+			<section class="column">
+				<div class="card mediaCard">
+					<h3>How to use Ask My Doc?</h3>
 
-					<video controls width="75%">
+					<video controls width="100%">
 						<source src="#" type="video/webm">
 						<source src="#" type="video/mp4">
 
 						<track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default />
 
-						Sorry, your browser doesn't support embedded videos.
+						<p>Sorry, your browser doesn't support embedded videos.</p>
 					</video>
-				</section>
-			</div>
-			<div class="column">
-				<!-- <section> -->
-				<h2>Need advice or have some feedback for us?</h2>
-				<form>
-					<fieldset>
-						<legend>Send us a message by filling out the form below and one of our Receptionists will be in
+				</div>
+			</section>
+			<section class="column">
+				<div class="card">
+					<h4>Need advice or have some feedback for us?</h4>
+					<!-- <form>
+						<fieldset>
+							<legend>Send us a message by filling out the form below and one of our Receptionists will be
+								in
+								touch:
+							</legend>
+							<p>Are you completing this form on behalf of: </p>
+							<label for="self">Yourself </label>
+							<input type="checkbox" id="self" name="self">
+
+							<label for="another">Someone else </label>
+							<input type="checkbox" id="another" name="another">
+
+
+							<div>
+								<label for="fname">First Name </label>
+								<input type="text" id="fname" name="fname" required>
+							</div>
+
+							<div>
+								<label for="lname">Last Name </label>
+								<input type="text" id="lname" name="lname" required>
+							</div>
+
+							<div>
+								<label for="dob">Date of Birth </label>
+								<input type="date" id="dob" name="dob" required>
+							</div>
+
+							<div>
+								<label for="telephone">Telephone Number: </label>
+								<input type="tel" id="telephone" name="telephone" required>
+							</div>
+
+							<div>
+								<label for="email">Email: </label>
+								<input type="email" id="email" name="email" required>
+							</div>
+
+							<div>
+								<label for="message">Your query or message: </label>
+								<input type="text" id="message" name="message" required>
+							</div>
+							<input type="submit" value="Submit" class="button">
+						</fieldset>
+					</form> -->
+					<form class="form-style-9">
+						<legend>Send us a message by filling out the form below and one of our Receptionists will be
+							in
 							touch:
 						</legend>
 						<p>Are you completing this form on behalf of: </p>
-						<label for="self">Yourself </label>
-						<input type="checkbox" id="self" name="self">
+						<ul>
+							<label for="self" class="field-style field-split align-left">Yourself </label>
+							<input type="checkbox" id="self" name="self" class="field-style field-split align-left">
 
-						<label for="another">Someone else </label>
-						<input type="checkbox" id="another" name="another">
+							<label for="another" class="field-style field-split align-right">Someone else </label>
+							<input type="checkbox" id="another" name="another" class="field-style field-split align-right">
+							
+							<br><br>
+							<li>
+								<input type="text" name="field1" class="field-style field-split align-left"
+									placeholder="First Name" />
+								<input type="test" name="field2" class="field-style field-split align-right"
+									placeholder="Last Name" />
 
-
-						<div>
-							<label for="fname">First Name </label>
-							<input type="text" id="fname" name="fname" required>
-						</div>
-
-						<div>
-							<label for="lname">Last Name </label>
-							<input type="text" id="lname" name="lname" required>
-						</div>
-
-						<div>
-							<label for="dob">Date of Birth </label>
-							<input type="date" id="dob" name="dob" required>
-						</div>
-
-						<div>
-							<label for="telephone">Telephone Number: </label>
-							<input type="tel" id="telephone" name="telephone" required>
-						</div>
-
-						<div>
-							<label for="email">Email: </label>
-							<input type="email" id="email" name="email" required>
-						</div>
-
-						<div>
-							<label for="message">Your query or message: </label>
-							<input type="text" id="message" name="message" required>
-						</div>
-						<input type="submit" value="Submit">
-					</fieldset>
-				</form>
-
-				<!-- </section> -->
-			</div>
+							</li>
+							<li>
+								<input type="text" name="field3" class="field-style field-split align-left"
+									placeholder="Phone" />
+								<input type="email" name="field4" class="field-style field-split align-right"
+									placeholder="Email" />
+							</li>
+							<li>
+								<input type="date" name="field3" class="field-style field-full align-none"
+									placeholder="Date of Birth" />
+							</li>
+							<li>
+								<textarea name="field5" class="field-style" placeholder="Your query or message"></textarea>
+							</li>
+							<li>
+								<input type="submit" value="Send Message" />
+							</li>
+						</ul>
+					</form>
+				</div>
+			</section>
 
 		</main>
 
-
-
-
-
-
 		<footer>
 
-			<p> The Tech Returners Surgery,<br>
+			<address> The Tech Returners Surgery,<br>
 				115 Mancunian Way,<br>
 				Manchester, M20 3PX
-			</p>
+			</address>
 		</footer>
 	</div>
 </body>
